@@ -102,14 +102,14 @@ public class Main {
     public static void task4() {
         System.out.println("Задача 4");
         //Массив 1
+        {
+            System.out.println("Вариант 1");
         int[] one = new int[3];
         one[0] = 1;
         one[1] = 2;
         one[2] = 3;
-        {
-            System.out.println("Вариант 1");
-            for (int i = 0; i <= one.length - 1; i++) {
-                if (one[i] % 2 == 0)
+               for (int i = 0; i <= one.length - 1; i++) {
+                   if (one[i] % 2 == 0)
                     System.out.print(one[i] + ", ");
                 else
                     System.out.print(one[i] + 1 + ", ");
@@ -120,9 +120,9 @@ public class Main {
             int [] arr = {1, 2, 3};
             for (int i = 0; i <= arr.length-1; i++) {
                 if ( arr [i] %2 ==0) {
-                    arr [i] = one[i];
+                    arr [i] = arr[i];
                } else {
-                    arr [i] = one[i] +1;
+                    arr [i] = arr[i] +1;
                 }}
                 System.out.println(Arrays.toString(arr));}
         }
