@@ -1,9 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
-        //task4();
+        task4();
         //task5();
         //task6();
         //task7();
@@ -82,7 +84,8 @@ public class Main {
                 System.out.print(two[i] + ", ");
             } else {
                 System.out.print(two[i]);
-                System.out.println();}
+                System.out.println();
+            }
         }
         // массив 3
         int[] buildingFloor = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -91,10 +94,41 @@ public class Main {
                 System.out.print(buildingFloor[i] + ", ");
             } else {
                 System.out.print(buildingFloor[i]);
-                System.out.println();}
+                System.out.println();
+            }
         }
     }
+
+    public static void task4() {
+        System.out.println("Задача 3");
+        //Массив 1
+        int[] one = new int[3];
+        one[0] = 1;
+        one[1] = 2;
+        one[2] = 3;
+        {
+            System.out.println("Вариант 1");
+            for (int i = 0; i <= one.length - 1; i++) {
+                if (one[i] % 2 == 0)
+                    System.out.print(one[i] + ", ");
+                else
+                    System.out.print(one[i] + 1 + ", ");
+            }{
+            System.out.println();}
+        } {
+            System.out.println("Вариант 2");
+            int [] arr = {1, 2, 3};
+            for (int i = 0; i <= arr.length-1; i++) {
+                if ( arr [i] %2 ==0) {
+                    arr [i] = one[i];
+               } else {
+                    arr [i] = one[i] +1;
+                }
+                }
+                System.out.println(Arrays.toString(arr));}
+        }
     }
+
 
 
 
