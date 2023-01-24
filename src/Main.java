@@ -100,7 +100,7 @@ public class Main {
     }
 
     public static void task4() {
-        System.out.println("Задача 3");
+        System.out.println("Задача 4");
         //Массив 1
         int[] one = new int[3];
         one[0] = 1;
@@ -123,8 +123,7 @@ public class Main {
                     arr [i] = one[i];
                } else {
                     arr [i] = one[i] +1;
-                }
-                }
+                }}
                 System.out.println(Arrays.toString(arr));}
         }
     }
