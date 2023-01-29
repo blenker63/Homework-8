@@ -1,15 +1,10 @@
 import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
         task3();
         task4();
-        //task5();
-        //task6();
-        //task7();
-        //task8();
     }
 
     public static void task1() {
@@ -32,14 +27,20 @@ public class Main {
         one[0] = 1;
         one[1] = 2;
         one[2] = 3;
-        for (int i = 0; i < one.length; i++) {
-            if (i != 2) {
-                System.out.print(one[i] + ", ");
-            } else {
-                System.out.print(one[i]);
-                System.out.println();
+        //for (int i = 0; i < one.length; i++) {
+        //if (i != 2) {
+        //System.out.print(one[i] + ", ");
+        //} else {
+        //System.out.print(one[i]);
+        //System.out.println();
+        for (int i = 0; i < one.length; i++) { //решение показанное на разборе
+            System.out.print(one[i]);
+            if (i != one.length - 1) {
+                System.out.print(", ");
             }
         }
+        System.out.println();
+
         // Массив 2
         double[] two = {1.57, 7.654, 9.986};
         for (int i = 0; i < two.length; i++) {
@@ -50,18 +51,18 @@ public class Main {
                 System.out.println();
             }
         }
-        // массив 3
-        int[] buildingFloor = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        for (int i = 0; i < buildingFloor.length; i++) {
-            if (i != buildingFloor.length - 1) {
-                System.out.print(buildingFloor[i] + ", ");
-            } else {
-                System.out.print(buildingFloor[i]);
-                System.out.println();
+
+            // массив 3
+            int[] buildingFloor = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+            for (int i = 0; i < buildingFloor.length; i++) {
+                if (i != buildingFloor.length - 1) {
+                    System.out.print(buildingFloor[i] + ", ");
+                } else {
+                    System.out.print(buildingFloor[i]);
+                    System.out.println();
+                }
             }
         }
-    }
-
     public static void task3() {
         System.out.println("Задача 3");
         //Массив 1
