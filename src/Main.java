@@ -70,14 +70,19 @@ public class Main {
         one[0] = 1;
         one[1] = 2;
         one[2] = 3;
-        for (int i = one.length - 1; i >= 0; i--) {
+        //for (int i = one.length - 1; i >= 0; i--) { //первоначальный вариант
+        //if (i != 0) {
+        //System.out.print(one[i] + ", ");
+        //} else {
+        //System.out.print(one[i]);
+        //System.out.println();
+        for (int i = one.length - 1; i >= 0; i--) { //вариант показанный на разборе
+            System.out.print(one[i]);
             if (i != 0) {
-                System.out.print(one[i] + ", ");
-            } else {
-                System.out.print(one[i]);
-                System.out.println();
+                System.out.print(", ");
             }
         }
+        System.out.println();
         // Массив 2
         double[] two = {1.57, 7.654, 9.986};
         for (int i = two.length - 1; i >= 0; i--) {
