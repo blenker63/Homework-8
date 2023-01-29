@@ -27,7 +27,7 @@ public class Main {
         one[0] = 1;
         one[1] = 2;
         one[2] = 3;
-        //for (int i = 0; i < one.length; i++) {
+        //for (int i = 0; i < one.length; i++) { // первоначальный вариант
         //if (i != 2) {
         //System.out.print(one[i] + ", ");
         //} else {
