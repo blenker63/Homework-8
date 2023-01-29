@@ -52,17 +52,18 @@ public class Main {
             }
         }
 
-            // массив 3
-            int[] buildingFloor = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-            for (int i = 0; i < buildingFloor.length; i++) {
-                if (i != buildingFloor.length - 1) {
-                    System.out.print(buildingFloor[i] + ", ");
-                } else {
-                    System.out.print(buildingFloor[i]);
-                    System.out.println();
-                }
+        // массив 3
+        int[] buildingFloor = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for (int i = 0; i < buildingFloor.length; i++) {
+            if (i != buildingFloor.length - 1) {
+                System.out.print(buildingFloor[i] + ", ");
+            } else {
+                System.out.print(buildingFloor[i]);
+                System.out.println();
             }
         }
+    }
+
     public static void task3() {
         System.out.println("Задача 3");
         //Массив 1
@@ -110,32 +111,48 @@ public class Main {
         //Массив 1
         {
             System.out.println("Вариант 1");
-        int[] one = new int[6];
-        one[0] = 1;
-        one[1] = 2;
-        one[2] = 3;
-        one[3] = 4;
-        one[4] = 5;
-        one[5] = 6;
-               for (int i = 0; i <= one.length - 1; i++) {
-                   if (one[i] % 2 == 0)
+            int[] one = new int[6];
+            one[0] = 1;
+            one[1] = 2;
+            one[2] = 3;
+            one[3] = 4;
+            one[4] = 5;
+            one[5] = 6;
+            for (int i = 0; i <= one.length - 1; i++) {
+                if (one[i] % 2 == 0)
                     System.out.print(one[i] + ", ");
                 else
                     System.out.print(one[i] + 1 + ", ");
-            }{
-            System.out.println();}
-        } {
+            }
+            {
+                System.out.println();
+            }
+        }
+        {
             System.out.println("Вариант 2");
-            int [] arr = {1, 2, 3, 4, 5, 6};
-            for (int i = 0; i <= arr.length-1; i++) {
-                if ( arr [i] %2 ==0) {
-                    arr [i] = arr[i];
-               } else {
-                    arr [i] = arr[i] +1;
-                }}
-                System.out.println(Arrays.toString(arr));}
+            int[] arr = {1, 2, 3, 4, 5, 6};
+            for (int i = 0; i <= arr.length - 1; i++) {
+                if (arr[i] % 2 == 0) {
+                    arr[i] = arr[i];
+                } else {
+                    arr[i] = arr[i] + 1;
+                }
+            }
+            System.out.println(Arrays.toString(arr));
+        }
+        {
+            System.out.println("Вариант решения с разбора"); // вариант решения с разбора
+            int[] one = {1, 2, 3, 4, 5, 6};
+            for (int i = 0; i < one.length; i++) {
+                if (one[i] %2 == 1) {
+                    one[i] = one[i] + 1;
+                }
+            }
+            System.out.println(Arrays.toString(one));
+
         }
     }
+}
 
 
 
